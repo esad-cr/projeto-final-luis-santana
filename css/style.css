@@ -85,3 +85,35 @@ iframe, video {
 ***************************************************
 ***************************************************/
 
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+}
+
+h1, h2, a{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-size: 2.5rem; /* 3x o tamanho do body - valor relativo */
+    color:aquamarine
+}
+
+a {
+    color: yellowgreen;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: crimson;
+}
+
+@media only screen and (min-width: 992px) {
+    h1 {
+        font-size: 3.5rem;
+        color: rgb(54, 34, 123, .9)
+    }
+}
