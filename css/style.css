@@ -86,34 +86,34 @@ iframe, video {
 ***************************************************/
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Tahoma, sans-serif;
     font-size: 16px;
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 h1, h2, a{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', monospace;
 }
 
 h1 {
-    font-size: 2.5rem; /* 3x o tamanho do body - valor relativo */
-    color:aquamarine
+    font-size: 1.5rem; /* 3x o tamanho do body - valor relativo */
+    color:rgb(148, 148, 148)
 }
 
 a {
-    color: yellowgreen;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     text-transform: uppercase;
 }
 
 a:hover {
-    color: crimson;
+    color: rgb(20, 220, 200);
 }
 
 @media only screen and (min-width: 992px) {
     h1 {
         font-size: 3.5rem;
-        color: rgb(54, 34, 123, .9)
+        color: rgba(17, 93, 206, 0.9)
     }
 }
