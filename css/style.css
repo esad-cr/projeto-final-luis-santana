@@ -101,6 +101,11 @@ h1 {
     color:rgb(148, 148, 148)
 }
 
+h2 {
+    font-size: 2rem;
+    color: rgb(247 , 127, 0);
+}
+
 a {
     color: rgb(234, 226, 183);
     text-decoration: none;
