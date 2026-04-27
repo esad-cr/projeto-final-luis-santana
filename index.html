@@ -10,43 +10,52 @@
         <link rel="icon" type="image/x-icon" href="imagens/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/style.css">
+
+    <!-- REMIXICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Estilos do Site-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header id="topHeader">
-            <h1>Portfólio</h1>
-            <br>
-            <div id="headerLogo">
-                <a href="index.html" title="Projecto Final - Index" rel="noopener noreferrer"><img src="imagens/logo.svg" alt="Logo"></a>
-            </div>         
+        <header id="topHeader" class="pageWidth">
             <nav id="mainMenu">
-                <ul>
+                <div class="navAction">
+                    <div id="headerLogo">
+                        <a href="index.html" title="Projecto Final - Index" rel="noopener noreferrer"><img src="imagens/logo.svg"   alt="Logo LS"><strong>Luis Santana</strong></a>
+                    </div>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__burger"></i>
+                        <i class="ri-close-line nav__close"></i>
+                    </div>
+                </div>
+                <!-- Definir área de navegação, com links internos/externos -->
+                <div class="nav__menu" id="NavMenu">
+                <ul class="nav__list">
                     <li>
-                        <a href="index.html" title="Página principal" rel="noopener noreferrer">Início</a>
+                        <a class="nav__link active" href="index.html" title="Página principal" rel="noopener noreferrer">Início</a>
                     </li>
-                    <br>
                     <li>
-                        <a href="sobre-mim.html" title="Sobre mim" rel="noopener noreferrer">Sobre mim</a>
+                        <a class="nav__link" href="sobre-mim.html" title="Sobre mim" rel="noopener noreferrer">Sobre mim</a>
                     </li>
-                    <br>
                     <li>
-                        <a href="projetos.html" title="Os meus projetos" rel="noopener noreferrer">Projetos</a>
+                        <a class="nav__link" href="projetos.html" title="Os meus projetos" rel="noopener noreferrer">Projetos</a>
                     </li>
-                    <br>
                     <li>
-                        <a href="processing.html" title="Trabalhos em Processing" rel="noopener noreferrer">Processing</a>
+                        <a class="nav__link" href="processing.html" title="Trabalhos em Processing" rel="noopener noreferrer">Processing</a>
                     </li>
-                    <br>
                     <li>
-                        <a href="contactos.html" title="Contactos" rel="noopener noreferrer">Contactos</a>
+                        <a class="nav__link"  href="contactos.html" title="Contactos" rel="noopener noreferrer">Contactos</a>
                     </li>
                 </ul>
-                <br>
+                </div>
             </nav>
-            
         </header>
+
         <main>
             <h1>Conteúdo Principal</h1>
             <br>
@@ -56,11 +65,10 @@
             <br>
             <h2>Artigo Principal 3</h2>
             <br>
-
         </main>
         <footer>
 
-            <p>&copy;Luis Santana. Todos os direitos reservados.</p>
+            <p>&copy; - Luis Santana. Todos os direitos reservados.</p>
 
         </footer>
         <script src="js/script.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
