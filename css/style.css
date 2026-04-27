@@ -87,7 +87,7 @@ iframe, video {
 
 /* ======Variable CSS====== */
 :root {
-    --header-height: 3.5rem;
+    --header-height: 4rem;
 
     /* Colours */
     --primary-color: rgb(214, 40, 40);
@@ -95,8 +95,10 @@ iframe, video {
     --background-color: rgb(0, 48, 73);
     --link-color: rgb(234, 226, 183);
     --link-hover-color: rgb(20, 220, 200);
-    --selection-text-color: rgb(255, 255, 255);
+    --selection-text-color: rgb(96, 137, 233);
     --selection-background-color: rgb(115, 23, 23);
+    --black-color: rgb(23, 28, 38);
+    --white-color: rgb(255, 255, 255);
 
     /* Font Weight */
     --font-regular: 400;
@@ -227,8 +229,8 @@ a:hover {
   width: 100%;
   max-width: 100%;
   height: var(--header-height);
-  background-color: var(--selection-text-color);
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+  background-color: var(--selection-text-color); /* ALTERAR COR DA BARRA */
+  box-shadow: 0 2px 16px var(--black-color);
   z-index: var(--z-fixed);
 }
 
@@ -237,4 +239,89 @@ a:hover {
   width: 100%;
   max-width: 1680px;
   margin: 0 auto;
+}
+
+.nav__toggle {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.nav__burger, .nav__close {
+  color: var(--black-color);
+}
+
+.navAction {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#headerLogo {
+  display: inline-flex;
+  align-items: center;
+  column-gap: .25rem;
+}
+
+#headerLogo a{
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+#headerLogo img {
+width: 3rem;
+margin-right: 1rem;
+margin-top: .5rem;
+}
+
+.nav__burger, .nav__close {
+  position: static;
+  width: max-content;
+  height: max-content;
+  margin: 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: opacity 0.1s, transform 0.4s;
+}
+
+.nav__close {
+  opacity: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .nav__menu {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 4rem);
+    overflow: auto;
+    pointer-events: none;
+    opacity: 0;
+    transition: top .4s, opacity .3s;
+  }
+.nav__menu::-webkit-scrollbar {
+  width: 0;
+}
+.nav__list {
+  background-color: var(--white-color);
+  padding: 1rem;
+}
+}
+
+.nav__link {
+  color: var(--secondary-color);
+  background-color: var(--selection-text-color);
+  font-weight: var(--font-bold);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s; 
+}
+
+.nav__link:hover {
+  background-color: var(--primary-color);
 }
