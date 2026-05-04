@@ -91,8 +91,8 @@ iframe, video {
 
     /* Colours */
     --primary-color: rgb(214, 40, 40);
-    --secondary-color: rgb(247, 127, 0);
-    --background-color: rgb(0, 48, 73);
+    --secondary-color: rgb(246, 173, 16);
+    --background-color: rgb(1, 64, 98);
     --link-color: rgb(234, 226, 183);
     --link-hover-color: rgb(20, 220, 200);
     --selection-text-color: rgb(96, 137, 233);
@@ -378,3 +378,19 @@ margin-right: 1rem;
   }
 }
 
+/* ======main Content====== */
+#mainContent {
+  margin-top:var(--header-height)!important;
+}
+
+@media screen and (min-width: 992px) {
+  #mainContent {
+    margin-top: calc(var(--header-height) + 2rem);
+  }
+}
+
+/* ======main Footer====== */
+#mainFooter {
+  padding: 20px;
+  text-align: center;
+}
