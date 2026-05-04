@@ -161,7 +161,7 @@ body header, body main, body footer {
   margin: 0 auto;
   padding: 0 16px;
 }
-  */
+*/
 
 /* Utilizando classes */
 .pageWidth {
@@ -170,6 +170,9 @@ body header, body main, body footer {
   margin: 0 auto;
   padding: 0 16px;
 }
+
+/* Espaçar elementos */
+
 
 /* ======Definição de font para mobile====== */
 h1 {
@@ -394,3 +397,4 @@ margin-right: 1rem;
   padding: 20px;
   text-align: center;
 }
+
