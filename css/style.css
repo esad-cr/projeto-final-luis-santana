@@ -235,7 +235,7 @@ a:hover {
 }
 
 #mainMenu {
-    height: var(--header-height)
+    height: var(--header-height);
   width: 100%;
   max-width: 1680px;
   margin: 0 auto;
