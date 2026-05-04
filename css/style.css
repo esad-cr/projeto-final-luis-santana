@@ -398,3 +398,66 @@ margin-right: 1rem;
   text-align: center;
 }
 
+/* ======Hero Section 1====== */
+.banner-container {
+  display: flex;
+justify-content: space-between;
+}
+.left-hero {
+  width: 60%;
+  z-index: var(--z-tooltip);  
+}
+
+.right-hero {
+  width: 40%;
+  position: relative;  
+}
+
+/* Navigation for mobile/tablet devices */
+@media screen and (max-width: 992px) {
+  .left-hero {
+    width: 100%;
+  }
+
+  .right-hero {
+    display: none;
+  }
+}
+
+h1.heading-text {
+    color: var(--primary-color);
+    margin: 5rem 5.5rem 2rem 0;
+}
+
+h1.heading-text span {
+    color: var(--secondary-color)
+}
+
+p.description {
+    color:var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+.btn {
+    border: none;
+    color: #FFFFFF;
+    background-color:var(--primary-color);
+    padding: 1.25rem 2.5rem;
+    border-radius: 12px;
+}
+
+.btn:hover {
+    background-color:var(--secondary-color);
+    cursor: pointer;
+}
+
+.banner-container:last-child {
+    margin-top: 5rem;
+}
+
+.banner-container div img{
+  max-width: 55vw;
+  position: absolute;
+  right: -16px;
+}

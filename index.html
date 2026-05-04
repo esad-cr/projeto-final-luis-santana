@@ -23,48 +23,60 @@
     </head>
     <body>
         <header id="topHeader" class="pageWidth">
-            <nav id="mainMenu">
-                <div class="navAction">
-                    <div id="headerLogo">
-                        <a href="index.html" title="Projecto Final - Index" rel="noopener noreferrer"><img src="imagens/logo.svg"   alt="Logo LS"><strong>Luis Santana</strong></a>
-                    </div>
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="ri-menu-line nav__burger"></i>
-                        <i class="ri-close-line nav__close"></i>
-                    </div>
-                </div>
-                <!-- Definir área de navegação, com links internos/externos -->
-                <div class="nav__menu" id="navMenu">
-                    <ul class="nav__list">
-                        <li>
-                        <a class="nav__link active" href="index.html" title="Página principal" rel="noopener noreferrer">Início</a>
-                        </li>
-                        <li>
-                        <a class="nav__link" href="sobre-mim.html" title="Sobre mim" rel="noopener noreferrer">Sobre mim</a>
-                        </li>
-                        <li>
-                        <a class="nav__link" href="projetos.html" title="Os meus projetos" rel="noopener noreferrer">Projetos</a>
-                        </li>
-                        <li>
-                        <a class="nav__link" href="processing.html" title="Trabalhos em Processing" rel="noopener noreferrer">Processing</a>
-                        </li>
-                        <li>
-                        <a class="nav__link"  href="contactos.html" title="Contactos" rel="noopener noreferrer">Contactos</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
         </header>
+        <main id="mainContent" class="">
+            <!-- O conteúdo principal da página, exclusivo e central. Deve haver apenas um <main> por página. -->
+            <!-- Hero 1 Section -->
+            <section aria-label="banner" id="sectionHero1">
+                <div class="banner-container pageWidth">
+                <!-- Left text -->
+                    <div class="left-hero">
+                        <h1 class="h2 heading-text">
+                            Title <span>Example</span> Reference
+                        </h1>
+                        <p class="description">
+                            Text Example 2
+                        </p>
+                        <button class="h5 nav-button btn">Text Example 3</button>
+                    </div>
+                    <!-- Right Text -->
+                    <div class="right-hero">
+                        <img src="imagens/hero/heroIllustration.png" alt="illustration" />
+                    </div>
+                </div>
+            </section>
+            <section class="space-60">
 
-        <main>
-            <h1>Conteúdo Principal</h1>
-            <br>
-            <h2>Artigo Principal 1</h2>
-            <br>
-            <h2>Artigo Principal 2</h2>
-            <br>
-            <h2>Artigo Principal 3</h2>
-            <br>
+            </section>
+            <!-- Hero 2 Section -->
+            <section aria-label="hero" id="sectionHero2">
+                <div class="hero">
+                    <h1 class="h2 hero-heading">Lets build a better tomorrow, together.</h1>
+                    <p class="h5 hero-description">
+                        Buy 1 Token. Join the DAO. Change the world
+                    </p>
+                    <button class="h6 button-large">Request Early Access</button>
+                </div>
+            </section>
+            <!-- Hero 3 Section -->
+             <section class="space-60">
+
+            </section>
+            <section id='hero-video'>
+                <div id='video-box'>
+                    <video autoplay muted loop style>
+                        <source src="videos/hero/festiva.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div id='hero-content'>
+                    <h1 class="h2">Night Live 2026</h1>
+                    <p>FESTIVA NIGHT PRESENTS</p>
+                    <div id='hero-button-container'>
+                        <button class="h6 button-video">Let's begin</button>
+                    </div>
+                </div>
+
+            </section>
         </main>
         <footer>
 
