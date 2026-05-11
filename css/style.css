@@ -460,4 +460,5 @@ p.description {
   max-width: 55vw;
   position: absolute;
   right: -16px;
+  height: 100%;
 }
