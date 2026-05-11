@@ -407,17 +407,17 @@ h1.hero-heading {
     text-align: center;
     line-height: 100px;
     margin-top: 150px;
-    color: var(--white-color);
+    color: var(--primary-color);
 }
 
 .hero-description {
     margin-top: 10px;
-    color: var(--white-color);
+    color: var(--secondary-color);
 }
 
 .button-large {
     color: var(--white-color);
-    background-color: var(--primary-color);
+    background-color: var(--link-hover-color);
     border: none;
     padding: 15px 40px;
     border-radius: 10px;
