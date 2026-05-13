@@ -90,11 +90,11 @@ iframe, video {
     --header-height: 4rem;
 
     /* Colours */
-    --primary-color: rgb(214, 40, 40);
-    --secondary-color: rgb(246, 173, 16);
-    --background-color: rgb(1, 64, 98);
-    --link-color: rgb(234, 226, 183);
-    --link-hover-color: rgb(20, 220, 200);
+    --primary-color: rgb(8, 103, 136);
+    --secondary-color: rgb(7, 160, 195);
+    --background-color: rgb(240, 200, 8);
+    --link-color: rgb(135, 195, 143);
+    --link-hover-color: rgb(221, 28, 26);
     --selection-text-color: rgb(96, 137, 233);
     --selection-background-color: rgb(115, 23, 23);
     --black-color: rgb(23, 28, 38);
@@ -142,7 +142,7 @@ a {
 }
 
 a:hover, a:active, a.active {
-  color: var(--secondary-color);
+  color: var(--background-color);
 }
 
 /* Utilizando tags
