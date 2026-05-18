@@ -401,6 +401,12 @@ margin-right: 1rem;
   }
 }
 
+/* ======main Footer====== */
+#mainFooter {
+  padding: 20px;
+  text-align: center;
+}
+
 /* ======cards====== */
 .container {
   --gap: 0;
@@ -469,10 +475,4 @@ margin-left: auto;
   margin: auto;
   margin-top: 3em;
   transition: var(--background-color) 200ms ease-in-out;
-}
-
-/* ======main Footer====== */
-#mainFooter {
-  padding: 20px;
-  text-align: center;
 }
