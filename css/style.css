@@ -397,7 +397,7 @@ margin-right: 1rem;
 
 @media screen and (min-width: 992px) {
   #mainContent {
-    margin-top: calc(var(--header-height) + 2rem);
+    margin-top: calc(var(--header-height)+2rem);
   }
 }
 
@@ -444,6 +444,10 @@ margin-left: auto;
   background-color: var(--selection-text-color);
 }
 
+.bg-fourth-color {
+  background-color: var(--link-hover-color);
+}
+
 /* ======articles - estilo do card====== */
 .container article:first-child {
   border-top-left-radius: 8px;
@@ -462,7 +466,8 @@ margin-left: auto;
 }
 
 .container article > img {
-  width: 4rem;
+  width: 500px;
+
 }
 
 /* ======botões====== */
