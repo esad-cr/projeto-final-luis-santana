@@ -232,7 +232,7 @@ a:hover {
   width: 100%;
   max-width: 100%;
   height: var(--header-height);
-  background-color: var(--selection-text-color); /* ALTERAR COR DA BARRA */
+  background-color: var(--selection-text-color);
   box-shadow: 0 2px 16px var(--black-color);
   z-index: var(--z-fixed);
 }
