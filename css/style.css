@@ -519,6 +519,7 @@ margin-left: auto;
 
 /* ======botões====== */
 .learn-more-button {
+  background-color: var(--selection-background-color);
   border: none;
   border-radius: 40px;
   letter-spacing: 1px;
