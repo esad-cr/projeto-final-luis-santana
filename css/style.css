@@ -401,19 +401,19 @@ margin-right: 1rem;
   }
 }
 
-/* ======Hero Section====== */
+/* ======Hero Section for project page====== */
 .banner-container {
   display: flex;
 justify-content: space-between;
 }
 .left-hero {
-  width: 60%;
+  width: 55%;
   z-index: var(--z-tooltip);  
 }
 
 .right-hero {
-  width: 40%;
-  position: relative;  
+  width: 45%;
+  position: relative;
 }
 
 /* Navigation for mobile/tablet devices for project page */
@@ -446,11 +446,12 @@ p.description {
     margin-top: 5rem;
 }
 
-.banner-container div img{
-  max-width: 55vw;
-  position: absolute;
-  right: -16px;
-  height: 100%;
+.banner-container .right-hero img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  right: auto;
 }
 
 /* ======cards====== */
