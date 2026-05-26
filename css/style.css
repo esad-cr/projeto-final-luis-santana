@@ -90,15 +90,15 @@ iframe, video {
     --header-height: 4rem;
 
     /* Colours */
-    --primary-color: rgb(214, 40, 40);
-    --secondary-color: rgb(246, 173, 16);
-    --background-color: rgb(1, 64, 98);
-    --link-color: rgb(234, 226, 183);
-    --link-hover-color: rgb(20, 220, 200);
-    --selection-text-color: rgb(96, 137, 233);
-    --selection-background-color: rgb(115, 23, 23);
-    --black-color: rgb(23, 28, 38);
-    --white-color: rgb(255, 255, 255);
+    --background-color: #0F172A;
+    --primary-color: #F1F5F9;
+    --secondary-color: #94A3B8;
+    --link-color: #38BDF8;
+    --link-hover-color: #7DD3FC;
+    --selection-background-color: #1E3A8A;
+    --selection-text-color: #F8FAFC;
+    --black-color: #171C26;
+    --white-color: #FFFFFF;
 
     /* Font Weight */
     --font-regular: 400;
@@ -241,7 +241,7 @@ a:hover {
   width: 100%;
   max-width: 100%;
   height: var(--header-height);
-  background-color: var(--selection-text-color); /* ALTERAR COR DA BARRA */
+  background-color: var(--background-color); 
   box-shadow: 0 2px 16px var(--black-color);
   z-index: var(--z-fixed);
 }
@@ -264,7 +264,7 @@ a:hover {
 }
 
 .nav__burger, .nav__close {
-  color: var(--black-color);
+  color: var(--primary-color);
 }
 
 .navAction {
@@ -284,6 +284,11 @@ a:hover {
   display: flex;
   align-items: center;
   font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+#headerLogo a:hover {
+  color: var(--link-hover-color);
 }
 
 #headerLogo img {
@@ -293,7 +298,6 @@ margin-right: 1rem;
 }
 
 .nav__burger, .nav__close {
-  position: absolute;
   width: max-content;
   height: max-content;
   margin: 0;
@@ -318,6 +322,7 @@ margin-right: 1rem;
     pointer-events: none;
     opacity: 0;
     transition: height .4s, opacity .3s;
+    background-color: var(--background-color);
   }
 .nav__menu::-webkit-scrollbar {
   width: 0;
@@ -328,8 +333,8 @@ margin-right: 1rem;
 }
 
 .nav__link {
-  color: var(--secondary-color);
-  background-color: var(--selection-text-color);
+  color: var(--primary-color);
+  background-color: transparent;
   font-weight: var(--font-bold);
   padding: 1.25rem 1.5rem;
   display: flex;
@@ -339,7 +344,7 @@ margin-right: 1rem;
 }
 
 .nav__link:hover {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 /* ======Show Menu====== */
@@ -466,7 +471,7 @@ p.description {
 }
 
 .box_shadow {
-  box-shadow: 3px 3px 15px 2px rgba(0, 0, 0, 0.52);
+  box-shadow: 3px 3px 15px 2px var(--black-color);
 }
 
 .border_radius {
