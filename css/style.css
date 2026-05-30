@@ -242,7 +242,7 @@ a:hover {
   max-width: 100%;
   height: var(--header-height);
   background-color: var(--background-color); 
-  box-shadow: 0 2px 16px var(--black-color);
+  box-shadow: 0 4px 8px var(--link-hover-color);
   z-index: var(--z-fixed);
 }
 
