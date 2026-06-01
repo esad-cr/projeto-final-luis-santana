@@ -297,7 +297,7 @@ a:hover {
 #headerLogo img {
 width: 3rem;
 margin-right: 1rem;
-
+filter: invert(0);
 }
 
 .nav__burger, .nav__close {
