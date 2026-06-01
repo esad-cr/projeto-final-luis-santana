@@ -22,11 +22,12 @@
     <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        
         <header id="topHeader" class="pageWidth">
             <nav id="mainMenu">
                 <div class="navAction">
                     <div id="headerLogo">
-                        <a class="nav__link" href="index.html" title="Homepage - Portfolio - Luis Santana" rel="noopener noreferrer"><img src="imagens/logo.svg"   alt="Logo LS"><strong>Luis Santana</strong></a>
+                        <a class="nav__link" href="index.html" title="Homepage - Portfolio - Luis Santana" rel="noopener noreferrer"><img src="imagens/logo.svg" alt="Logo LS"><strong>Luis Santana</strong></a>
                     </div>
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="ri-menu-line nav__burger"></i>
@@ -34,39 +35,50 @@
                     </div>
                 </div>
                 <!-- Definir área de navegação, com links internos/externos -->
-                    <div class="nav__menu" id="navMenu">
+                <div class="nav__menu" id="navMenu">
                     <ul class="nav__list">
                         <li>
-                        <a class="nav__link" href="sobre-mim.html" title="About me" rel="noopener noreferrer">About Me</a>
+                            <a class="nav__link" href="sobre-mim.html" title="Sobre mim" rel="noopener noreferrer">About Me</a>
                         </li>
                         <li>
-                        <a class="nav__link" href="projetos.html" title="My projects" rel="noopener noreferrer">Projects</a>
+                            <a class="nav__link" href="projetos.html" title="Meus projetos" rel="noopener noreferrer">Projects</a>
                         </li>
                         <li>
-                        <a class="nav__link" href="processing.html" title=" Processing project" rel="noopener noreferrer">Processing</a>
+                            <a class="nav__link" href="processing.html" title="Projeto Processing" rel="noopener noreferrer">Processing</a>
                         </li>
                         <li>
-                        <a class="nav__link active"  href="contactos.html" title="Contacts" rel="noopener noreferrer">Contacts</a>
+                            <a class="nav__link active" href="contactos.html" title="Contactos" rel="noopener noreferrer">Contacts</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
 
-        <main>
-            <h1>Contactos</h1>
-            <br>
-            <h2>Contacto Informação 1</h2>
-            <br>
-            <h2>Contacto Informação 2</h2>
-            <br>
-            <h2>Contacto Informação 3</h2>
-            <br>
+        <main id="mainContent">
+            <!-- Secção com cards de informação de contacto -->
+            <section id="cards-contact" class="container">
+                <div class="flex">
+                    <div class="flex flex-column bg-secondary-color contact-card">
+                        <i class="ri-mail-line contact-icon"></i>
+                        <h2 class="white_text">Email</h2>
+                        <p class="white_text">
+                            test@mail.com
+                        </p>
+                    </div>
+                    
+                    <div class="flex flex-column bg-secondary-color contact-card">
+                        <i class="ri-phone-line contact-icon"></i>
+                        <h2 class="white_text">Telefone</h2>
+                        <p class="white_text">
+                            +351 912 345 678
+                        </p>
+                    </div>
+                </div>
+            </section>
         </main>
-        <footer>
-
-            <p>&copy; - Luis Santana. Todos os direitos reservados.</p>
-
+        
+        <footer id="mainFooter" class="pageWidth">
+            <p>&copy; - Luis Santana. All rights reserved.</p
         </footer>
         <script src="js/script.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js" integrity="sha512-lbO95HE52QWwrDVEaDJmW9Xr8UIfMpRFT3akB8ett7lGfWsrGKz07L6wfwnF3KJ3T4a8cZupAKoI9Q2jH+0QIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
