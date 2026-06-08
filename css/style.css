@@ -421,35 +421,47 @@ filter: invert(0);
   }
 }
 
-/* ======Hero Section for project page====== */
+/* ======Página de projetos====== */
 .banner-container {
   display: flex;
 justify-content: space-between;
+  align-items: center;
 }
 .left-hero {
-  width: 55%;
+  width: 50%;
   z-index: var(--z-tooltip);  
 }
 
 .right-hero {
   width: 45%;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Navigation for mobile/tablet devices para página de projetos */
 @media screen and (max-width: 992px) {
-  .left-hero {
+  .banner-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .left-hero,
+  .right-hero {
     width: 100%;
   }
 
   .right-hero {
-    display: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
   }
 }
 
 h1.heading-text {
     color: var(--primary-color);
-    margin: 5rem 5.5rem 2rem 0;
+  margin: 0 5.5rem 1rem 0;
 }
 
 h1.heading-text span {
@@ -459,7 +471,8 @@ h1.heading-text span {
 p.description {
     color:var(--primary-color);
     font-size: 1.5rem;
-    margin-bottom: 5rem;
+  margin-bottom: 0;
+  text-align: left;
 }
 
 .banner-container:last-child {
@@ -474,7 +487,7 @@ p.description {
   right: auto;
 }
 
-/* ======cards====== */
+/* ======Cards====== */
 .container {
   --gap: 0;
   padding: 2rem;
@@ -503,7 +516,7 @@ margin-left: auto;
   background-color: var(--secondary-color);
 }
 
-/* ======articles - estilo do card====== */
+/* ======Estilo das card====== */
 .container article:first-child {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -537,12 +550,6 @@ margin-left: auto;
   margin: auto;
   margin-top: 3em;
   transition: var(--background-color) 200ms ease-in-out;
-}
-
-/* ======main Footer====== */
-#mainFooter {
-  padding: 20px;
-  text-align: center;
 }
 
 /* ======Página de contactos & projetos ====== */
@@ -613,4 +620,10 @@ margin-left: auto;
   .contact-card h2 {
     font-size: 1.3rem;
   }
+}
+
+/* ======main Footer====== */
+#mainFooter {
+  padding: 20px;
+  text-align: center;
 }
