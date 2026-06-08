@@ -109,6 +109,7 @@ iframe, video {
     --z-fixed: 100;
 }
 
+/* Ajustado para footer ficar no fundo da página mesmo com pouco conteúdo */
 body {
   display: flex;
   flex-direction: column;
