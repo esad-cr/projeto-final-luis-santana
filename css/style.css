@@ -485,10 +485,6 @@ p.description {
   gap: var(--gap, 1em)
 }
 
-.box_shadow {
-  box-shadow: 3px 3px 15px 2px var(--black-color);
-}
-
 .border_radius {
   border-radius: 8px;
 }
@@ -525,7 +521,8 @@ margin-left: auto;
 }
 
 .container article > img {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
 
 }
 
@@ -548,9 +545,8 @@ margin-left: auto;
   text-align: center;
 }
 
-/* ======Página de contactos====== */
-/* ======Cards de contacto======*/
-#cards-contact .flex {
+/* ======Página de contactos & projetos ====== */
+#cards-contact .flex, #cards-3col .flex {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
@@ -566,9 +562,9 @@ margin-left: auto;
 }
 
 /* ======Estilo para cards====== */
-.contact-card {
+.contact-card, #cards-3col article {
   padding: 2rem;
-  flex: 0 1 250px;
+  flex: 0 0 225px;
   min-height: 280px;
   display: flex;
   flex-direction: column;
@@ -601,7 +597,6 @@ margin-left: auto;
 .contact-card a:hover {
   color: var(--link-hover-color);
 }
-
 
 /* ======Navigation for mobile/tablet devices====== */
 @media (max-width: 992px) {
