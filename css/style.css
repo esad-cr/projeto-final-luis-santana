@@ -262,8 +262,9 @@ a:hover {
   display: flex;
   align-items: center;
   position: relative;
-  width: max-content;
-  height: max-content;
+  width: 2.5rem;
+  height: 2.5rem;
+  justify-content: center;
 }
 
 .nav__burger, .nav__close {
@@ -301,10 +302,17 @@ filter: invert(0);
 }
 
 .nav__burger, .nav__close {
-  width: max-content;
-  height: max-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin: 0;
   font-size: 1.5rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   transition: opacity 0.1s, transform 0.4s;
   transform-origin: center;
@@ -372,11 +380,11 @@ filter: invert(0);
 /* Show icon */
 .show-icon .nav__burger {
   opacity: 0;
-  transform: rotate(90deg);
+  transform: translate(-50%, -50%) rotate(90deg);
 }
 .show-icon .nav__close {
   opacity: 1;
-  transform: rotate(90deg);
+  transform: translate(-50%, -50%) rotate(90deg);
 }
 
 /* Navigation for large devices */
