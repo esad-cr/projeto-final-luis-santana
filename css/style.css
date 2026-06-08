@@ -303,19 +303,13 @@ filter: invert(0);
 
 .nav__burger, .nav__close {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  font-size: 1.5rem;
-  width: 1.6rem;
-  height: 1.6rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  width: max-content;
+  height: max-content;
+  inset: 0;
+  margin: auto;
+  font-size: 2rem;
   cursor: pointer;
-  transition: opacity 0.1s, transform 0.4s;
-  transform-origin: center;
+  transition: opacity .1s, transform .4s;
 }
 
 .nav__close {
@@ -380,11 +374,11 @@ filter: invert(0);
 /* Show icon */
 .show-icon .nav__burger {
   opacity: 0;
-  transform: translate(-50%, -50%) rotate(90deg);
+  transform: rotate(90deg);
 }
 .show-icon .nav__close {
   opacity: 1;
-  transform: translate(-50%, -50%) rotate(90deg);
+  transform: rotate(90deg);
 }
 
 /* Navigation for large devices */
