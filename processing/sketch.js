@@ -26,8 +26,12 @@ function setup() {
 
 // --- Main draw loop ---
 function draw(){
-  background(25); const c=width/2, cy=height/2;
-  // contorno exterior
+  // Canvas transparente fora da watch face
+  clear();
+  const c=width/2, cy=height/2;
+  // filled watch background (inside radial zone)
+  push(); noStroke(); fill(25); ellipse(c, cy, 430); pop();
+  // contorno exterior (outline)
   push(); strokeWeight(8); stroke(40); noFill(); ellipse(c, cy, 430); pop();
   // arcos
   if(!arcActive){ push(); strokeWeight(16); stroke(grayColor); noFill(); arc(c, cy, 360, 360, 0, PI); pop(); arcA=arcB=0; arcAnimating=false; }
