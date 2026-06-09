@@ -226,7 +226,7 @@ a:hover {
 }
 }
 
-/* utilidades */
+/* Utilidades */
 .text_center{
   text-align: center;
 }
@@ -423,8 +423,47 @@ filter: invert(0);
     margin-top: calc(var(--header-height)+2rem);
   }
 }
+ /* =====Página de Processing====== */ 
+/* Centrar o Canvas */
+#p5Canvas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  max-height: 520px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 0;
+  max-width: 520px;
+  margin: 1.25rem auto 1.5rem;
+}
+/* Ajuste responsivo do Canvas */
+#p5Canvas > canvas {
+  width: 100%;
+  height: auto;
+  max-width: 480px;
+  max-height: 480px;
+  display: block;
+}
 
-/* ======Página de projetos====== */
+.canvas_description {
+  text-align: center;
+  max-width: flex-content;
+  line-height: 1.5;
+  margin: 0.5rem auto 2rem;
+  padding: 0 2rem 1rem;
+}
+
+/* Estilizar Spans dentro da descrição */
+.canvas_description span {
+  color: var(--link-color);
+  font-weight: var(--font-bold);
+  padding: 0 .3rem;
+  border-radius: 4px;
+  background-color: var(--selection-background-color);
+}
+
+/* ======Página de Projetos====== */
 .banner-container {
   display: flex;
 justify-content: space-between;
@@ -510,7 +549,7 @@ p.description {
 margin-left: auto;
 }
 
-/* ======Definir as background-colors====== */
+/* Definir as background-colors */
 .bg-primary-color {
   background-color: var(--primary-color);
 }
@@ -519,7 +558,7 @@ margin-left: auto;
   background-color: var(--secondary-color);
 }
 
-/* ======Estilo das card====== */
+/* Estilo das Cards */
 .container article:first-child {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -542,7 +581,7 @@ margin-left: auto;
 
 }
 
-/* ======botões====== */
+/* ======Botões====== */
 .learn-more-button {
   background-color: var(--selection-background-color);
   border: none;
@@ -564,14 +603,14 @@ margin-left: auto;
   max-width: 1000px;
 }
 
-/* ======Ícones====== */
+/* Ícones */
 .contact-icon {
   font-size: 2.5rem;
   color: var(--primary-color);
   margin-bottom: 1rem;
 }
 
-/* ======Estilo para cards====== */
+/* Estilo para cards */
 .contact-card, #cards-3col article {
   padding: 2rem;
   flex: 0 0 225px;
