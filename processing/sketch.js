@@ -8,13 +8,6 @@ let spaceMono, jetBrainsMono; // fonts (loaded in preload)
 const DIAS = ["Domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sábado"];
 const MONTHS = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
 
-// --- Preload assets (fonts, etc) ---
-function preload(){
-  // Carregar fontes monospace da pasta do projeto (fallback se não existirem)
-  // Coloque `SpaceMono-Regular.ttf` e `JetBrainsMono-Regular.ttf` ao lado de `index.html` para usar fontes personalizadas
-  spaceMono = loadFont('SpaceMono-Regular.ttf'); jetBrainsMono = loadFont('JetBrainsMono-Regular.ttf');
-}
-
 function setup() {
     var myCanvas = createCanvas(450, 450);
   myCanvas.parent("p5Canvas");
