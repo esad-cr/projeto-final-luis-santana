@@ -524,8 +524,9 @@ justify-content: space-between;
 .about-skills li {
   list-style: none;
   padding: .35rem .6rem;
-  border-radius: 999px;
   border: 1px solid var(--link-hover-color);
+  border-radius: 999px;
+  box-shadow: 0 4px 5px var(--link-hover-color);
   color: var(--primary-color);
   font-size: .9rem;
 }
