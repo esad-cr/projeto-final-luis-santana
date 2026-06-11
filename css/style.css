@@ -482,6 +482,54 @@ justify-content: space-between;
   justify-content: center;
 }
 
+/* ======Página de About me ======*/
+.about {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.about-section h3 {
+  font-size: 1rem;
+  margin: 0 0 .5rem 0;
+  color: var(--secondary-color);
+  font-weight: 400;
+}
+
+.about-experience {
+  margin: 0;
+  padding: 0;
+  color: var(--primary-color);
+}
+
+.about-experience li {
+  margin-bottom: .75rem;
+  line-height: 1.25;
+}
+
+.about-experience small {
+  color: var(--secondary-color);
+  font-size: .9rem;
+}
+
+.about-skills {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.about-skills li {
+  list-style: none;
+  padding: .35rem .6rem;
+  border-radius: 999px;
+  border: 1px solid var(--link-hover-color);
+  color: var(--primary-color);
+  font-size: .9rem;
+}
+
 /* Navigation for mobile/tablet devices para página de projetos */
 @media screen and (max-width: 992px) {
   .banner-container {
@@ -518,7 +566,7 @@ p.description {
 }
 
 .banner-container:last-child {
-    margin-top: 5rem;
+    margin-top: 1rem;
 }
 
 .banner-container .right-hero img {
@@ -527,6 +575,18 @@ p.description {
   display: block;
   position: relative;
   right: auto;
+}
+
+/* Navigation for mobile/tablet devices para About me */
+@media screen and (max-width: 600px) {
+  h1.heading-text { font-size: 1.6rem; margin-right: 0; }
+  p.description { font-size: 1rem; line-height: 1.4; }
+  .about-sections { gap: .75rem; }
+  .about-section h3 { font-size: 0.95rem; }
+  .about-experience small { font-size: .85rem; }
+  .about-skills { gap: .35rem; }
+  .about-skills li { padding: .25rem .45rem; font-size: .85rem; }
+  .pageWidth { padding-left: 12px; padding-right: 12px; }
 }
 
 /* ======Cards====== */
