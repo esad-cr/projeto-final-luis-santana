@@ -420,7 +420,7 @@ filter: invert(0);
 
 @media screen and (min-width: 992px) {
   #mainContent {
-    margin-top: calc(var(--header-height)+2rem);
+    margin-top: calc(var(--header-height) + 2rem);
   }
 }
  /* =====Página de Processing====== */ 
@@ -467,7 +467,7 @@ filter: invert(0);
 .banner-container {
   display: flex;
 justify-content: space-between;
-  align-items: center;
+  align-items: 2rem;
 }
 .left-hero {
   width: 50%;
@@ -477,7 +477,7 @@ justify-content: space-between;
 .right-hero {
   width: 45%;
   position: relative;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
 }
@@ -531,10 +531,10 @@ justify-content: space-between;
   font-size: .9rem;
 }
 
-/* Navigation for mobile/tablet devices para página de projetos */
+/* Navigation for mobile/tablet devices para página de projetos/about me */
 @media screen and (max-width: 992px) {
   .banner-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: stretch;
   }
 
@@ -546,7 +546,7 @@ justify-content: space-between;
   .right-hero {
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 }
 
@@ -576,6 +576,7 @@ p.description {
   display: block;
   position: relative;
   right: auto;
+  margin-top: 2rem;
 }
 
 /* Navigation for mobile/tablet devices para About me */
