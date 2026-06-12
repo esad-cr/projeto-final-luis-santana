@@ -470,15 +470,15 @@ justify-content: space-between;
   align-items: 2rem;
 }
 .left-hero {
-  width: 50%;
+  width: 60%;
   z-index: var(--z-tooltip);  
 }
 
 .right-hero {
   width: 45%;
   position: relative;
-  display: block;
-  align-items: center;
+  display: flex;
+  align-items: flex-start;
   justify-content: center;
 }
 
