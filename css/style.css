@@ -429,24 +429,23 @@ filter: invert(0);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50%;
-  max-height: 520px;
-  height: auto;
-  box-sizing: border-box;
-  padding: 0;
+  width: 100%;
   max-width: 520px;
+  height: auto;
+  max-height: 520px;
+  padding: 0 1rem;
   margin: 1.25rem auto 1.5rem;
+  box-sizing: border-box;
 }
+
 /* Ajuste responsivo do Canvas */
 #p5Canvas > canvas {
-  width: 100%;
-  height: auto;
-  max-width: 480px;
-  max-height: 480px;
+  width: 100% !important; 
+  height: auto !important;
   display: block;
 }
 
-.canvas_description {
+.processing_description {
   text-align: center;
   max-width: flex-content;
   line-height: 1.5;
@@ -455,7 +454,7 @@ filter: invert(0);
 }
 
 /* Estilizar Spans dentro da descrição */
-.canvas_description span {
+.processing_description span {
   color: var(--link-color);
   font-weight: var(--font-bold);
   padding: 0 .3rem;
@@ -463,10 +462,10 @@ filter: invert(0);
   background-color: var(--selection-background-color);
 }
 
-/* ======Página de Projetos====== */
+/* ======Página de Projetos/About me====== */
 .banner-container {
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
   align-items: 2rem;
 }
 .left-hero {
@@ -474,12 +473,31 @@ justify-content: space-between;
   z-index: var(--z-tooltip);  
 }
 
+/* Usado na página de About me */
 .right-hero {
   width: 45%;
   position: relative;
   display: flex;
   align-items: flex-start;
   justify-content: center;
+}
+
+.right-hero-projects {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+  row-gap: 0;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.right-hero-projects img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* ======Página de About me ======*/
@@ -548,6 +566,15 @@ justify-content: space-between;
     justify-content: center;
     margin-top: 1rem;
   }
+
+  h1.heading-text { font-size: 1.6rem; margin-right: 0; }
+  p.description { font-size: 1rem; line-height: 1.4; }
+  .about-sections { gap: .75rem; }
+  .about-section h3 { font-size: 0.95rem; }
+  .about-experience small { font-size: .85rem; }
+  .about-skills { gap: .35rem; }
+  .about-skills li { padding: .25rem .45rem; font-size: .85rem; }
+  .pageWidth { padding-left: 12px; padding-right: 12px; }
 }
 
 h1.heading-text {
@@ -577,18 +604,6 @@ p.description {
   position: relative;
   right: auto;
   margin-top: 2rem;
-}
-
-/* Navigation for mobile/tablet devices para About me */
-@media screen and (max-width: 600px) {
-  h1.heading-text { font-size: 1.6rem; margin-right: 0; }
-  p.description { font-size: 1rem; line-height: 1.4; }
-  .about-sections { gap: .75rem; }
-  .about-section h3 { font-size: 0.95rem; }
-  .about-experience small { font-size: .85rem; }
-  .about-skills { gap: .35rem; }
-  .about-skills li { padding: .25rem .45rem; font-size: .85rem; }
-  .pageWidth { padding-left: 12px; padding-right: 12px; }
 }
 
 /* ======Cards====== */
