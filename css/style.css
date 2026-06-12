@@ -255,7 +255,7 @@ a:hover {
   position: fixed; /* fixo no scroll */
   top: 0;
   left: 0;
-  width: 100%;
+  max-width: 100%;
   height: var(--header-height);
   background-color: var(--background-color); 
   box-shadow: 0 4px 8px var(--link-hover-color);
@@ -473,45 +473,46 @@ filter: invert(0);
   background-color: var(--selection-background-color);
 }
 
-/* ======Página de Projetos/About me====== */
+/* ======Página de About me====== */
 .banner-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-}
-.left-hero {
-  width: 60%;
-  z-index: var(--z-tooltip);  
+  gap: 4rem;
 }
 
-/* Usado na página de About me */
+.banner-container:last-child {
+  margin-top: 1rem;
+}
+
+.banner-container .right-hero img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  right: auto;
+  margin-top: 2rem;
+}
+
+.left-hero {
+  width: 60%;
+  position: sticky;
+  z-index: var(--z-tooltip);
+  margin-bottom: 4rem;
+}
+
 .right-hero {
-  width: 45%;
+  width: 30%;
   position: relative;
   display: flex;
   align-items: flex-start;
   justify-content: center;
 }
 
-.right-hero-projects {
-  width: 45%;      
-  position: relative;         
-  display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 2rem;
-  align-content: start;
-  justify-items: center;
-  margin-top: 1rem;
+.right-hero img {
+  border-radius: 8px;
 }
 
-.right-hero-projects img {
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* ======Página de About me======*/
 .about {
   margin-top: 1.5rem;
   display: flex;
@@ -565,6 +566,7 @@ filter: invert(0);
   .banner-container {
     flex-direction: column-reverse;
     align-items: stretch;
+    gap: 1.5rem;
   }
 
   .left-hero,
@@ -578,15 +580,6 @@ filter: invert(0);
     margin-top: 1rem;
   }
 
-  .right-hero-projects {
-  width: 100%;
-  grid-template-columns: repeat(2, 1fr);  /* Cria duas colunas */
-  column-gap: 1rem; 
-  align-items: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
   .about-sections { gap: .75rem; }
   .about-section h3 { font-size: 0.95rem; }
   .about-experience small { font-size: .85rem; }
@@ -595,17 +588,60 @@ filter: invert(0);
   .pageWidth { padding-left: 12px; padding-right: 12px; }
 }
 
-.banner-container:last-child {
+/* ======Página de Projetos====== */
+.banner-container-projects {
+flex-direction: column;
+align-items: center;
+gap: 3rem;
+}
+
+.left-hero-projects {
+  width: 60%;
+  position: sticky; /* Fica fixo no scroll */
+  z-index: var(--z-tooltip);
+  top: calc(var(--header-height) + 1rem); /*Garante que texto fica*/
+}
+
+.right-hero-projects {
+  width: 45%;      
+  position: relative;         
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+  align-content: start;
+  justify-items: center;
   margin-top: 1rem;
 }
 
-.banner-container .right-hero img {
+.right-hero-projects img {
   max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
-  position: relative;
-  right: auto;
-  margin-top: 2rem;
+  border-radius: 8px;
+}
+
+/* Navigation for mobile/tablet devices para página de projetos */
+@media screen and (max-width: 992px) {
+  .banner-container-projects {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    gap: 1.5rem;
+  }
+
+  .left-hero-projects,
+  .right-hero-projects {
+    width: 100%;
+  }
+
+  .right-hero-projects {
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);  /* Cria duas colunas */
+  column-gap: 1rem; 
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 }
 
 /* ======Cards====== */
