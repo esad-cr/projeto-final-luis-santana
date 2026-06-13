@@ -645,13 +645,6 @@ margin-bottom: 2rem;
   row-gap: 1.5rem;
   align-items: center;
 }
-
-.right-hero-projects img, .right-hero-projects video {
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
 }
 
 /* ======Cards====== */
